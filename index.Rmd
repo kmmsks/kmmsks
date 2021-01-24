@@ -12,7 +12,7 @@ library(ggplot2)
 ```{css, echo=FALSE}
 html *
 {
- #font-family: Helvetica, Times, serif !important;
+ font-family: Helvetica, Times, serif
 }
 
 h1 {
