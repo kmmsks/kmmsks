@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi
 
 https://kmmsks.github.io/kmmsks/
 
