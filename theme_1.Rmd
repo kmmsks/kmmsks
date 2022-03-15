@@ -130,10 +130,6 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 [lipsum.com/](https://www.lipsum.com/)
 ]
 ]
----
-class: center, middle
-
-![](gradient.gif)
 
 ---
 
