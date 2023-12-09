@@ -41,3 +41,5 @@ vignettes/*.pdf
 /.quarto/
 
 /CV_R/
+
+.DS_Store
