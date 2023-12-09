@@ -1,4 +1,5 @@
-### Hi
+Kimmo Suokas
+MD, psychiatrist. Interested in social psychiatry, and psychiatric and social epidemiology.
 
 https://kmmsks.github.io/kmmsks/
 
