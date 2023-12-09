@@ -1,0 +1,4 @@
+peer_reviewd,aka_category,year_month,reference
+TRUE,"a","2014-01","Suokas, K., Kampman, O. (2014). Autoimmuunienkefaliitti psykoosinaiheuttajana [Autoimmune Encephalitis as a Cause of Psychosis].Duodecim; Laaketieteellinen Aikakauskirja, 130(5), 469—474. https://www.duodecimlehti.fi/duo11531"
+FALSE,"d","2017-11","Suokas, K. (2017). DSM-5 ja addiktion ongelma [DSM-5 and Issues Related to Addiction]. Suomen Lääkärilehti, 72(44), 2509. https://www.laakarilehti.f/ajassa/keskustelua/dsm-5-jaaddiktion-ongelmat/"
+FALSE,"d","2016-03","Suokas, K., Kalsi, J., & Lassila, A. (2016). Asiakas ei ole ainaoikeassa – eikä lääkärikään [The Customer Is not Always Right - and Neither Is the Doctor]. Suomen Lääkärilehti, 71(9), 626–627. https://www.laakarilehti.fi/ajassa/nakokulmat/asiakas-ei-ole-aina-oikeassa-ndash-eikalaakarikaan/"

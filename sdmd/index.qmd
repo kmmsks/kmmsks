@@ -1,0 +1,110 @@
+---
+title: "Social determinants of mental disorders in Finland - a register-based study"
+execute:
+  echo: false
+---
+  
+```{r}
+library(magrittr)
+library(data.table)
+library(gt)
+
+awards <- fread("../data/awards.csv") %>% .[language == "en"]
+
+pubs <- fread("../publications/publications.csv")
+
+```
+
+## Aims
+
+This project aims 
+
+- to update some fundamental descriptive analysis of the epidemiology of mental disorders in Finland, including primary and secondary care data
+- to analyze the dynamic interplay between socioeconomic factors and mental health over the life-course and on multiple levels, and
+- to improve conditions and methodologies in register-based research by adopting principles of open science.
+
+## Rationale
+
+Despite the advancements made in analytical epidemiology concerning mental disorders, the role of descriptive analysis remains important for comprehending the landscape of psychiatry and mental health. Trends such as deinstitutionalization, changes in attitudes towards mental disorders, the integration of mental health into primary care, and economical and political transformations all underscore the need for continuously updated descriptive statistics and monitoring. These efforts serve not only to enlighten both the public and clinicians but also to facilitate informed dialogues on optimal practices.
+
+Depression and anxiety are among the top 10 most common reasons for visits to primary care, but much of the register-based research has been conducted using secondary care data only. Our aim is to expand our analysis to include primary care as well as secondary care mental health services.
+
+So far, this project has focused on certain classical questions in psychiatric epidemiology:
+
+## Topics
+
+### Household income and the inidence of first psychiatric hospital admissions
+
+This study is one of only a few studies reporting incidence rates in all first psychiatric admissions, and to the best of our knowledge, it is the first national-level study showing that a robust income gradient is present in the incidence rates of first hospitalizations due to mental disorders. Household income appears to be an important risk factor for first hospital-treated mental disorders at all levels of income.
+
+Between 1994 and 2014 in Finland, the age-standardized annual incidence rate of first hospital admissions peaked in 2008 and subsequently began to decline. Following this study, two other Finnish papers have reported similar findings of increasing first admissions among adolescents and in children, adolescents and young adults. The observed increase in first admissions during a time when outpatient-centered services dominate, raises some concerns about the effectiveness of outpatient care in managing acute and severe mental disturbances.
+
+
+#### Awards 
+
+This study won the Publication of the Year by `r awards[what == "Publication of the Year", paste(by_whom, "in", years)]` and the `r awards[by_whom %like% "EPA", paste0(what, " by the ", by_whom, " in ", years)]` awards.
+
+#### References
+
+- `r pubs[reference %like% "10.1001/jamapsychiatry.2019.3647", ref_link]`
+
+#### Media (mainly in Finnish)
+
+- [Press release](https://www.tuni.fi/fi/ajankohtaista/tulojen-ja-ensimmaisen-psykiatrisen-sairaalahoidon-valilla-selva-yhteys)
+- [Tutkimus: Köyhät päätyvät rikkaampia useammin psykiatriseen sairaalahoitoon](https://yle.fi/a/3-11129680). YLE
+- [Analyysi: Mielen hyvinvoinnin tukeminen on osa kasautuvan huono-osaisuuden ehkäisyä](https://kuntalehti.fi/uutiset/sote/analyysi-mielen-hyvinvoinnin-tukeminen-on-osa-kasautuvan-huono-osaisuuden-ehkaisya/). Kuntalehti
+
+### Regional and urban-rural variations in the prevalence of mental disorders
+
+In Finland, prevalence of schizophrenia is higher in the eastern and northern regions and co-occurs with the distribution of schizophrenia polygenic risk scores. Both genetic and environmental factors have been hypothesized to contribute to this variation. There are well-known differences in population health and genetics that follow a distinct east-west gradient.
+
+We showed, however, that after adjusting for socioeconomic and sociodemographic factors, the within-country distribution of mental disorders no longer followed the traditional east–west gradient. Urban–rural differences, on the other hand, persisted after the adjustments.
+
+#### References
+
+- `r pubs[reference %like% "10.1007/s00127-023-02516-x", ref_link]`
+
+#### Media
+
+- [Press release](https://www.tuni.fi/fi/ajankohtaista/mielenterveyshairiot-yleisempia-kaupungeissa-korkeammasta-tulotasosta-huolimatta) 
+- [Ennen psykooseja esiintyi Suomessa enemmän maaseudulla kuin kaupungeissa – ei enää, sanoo uusi tutkimus](https://www.hameensanomat.fi/uutissuomalainen/6018026). Hämeen Sanomat
+- [Ennen psykooseja esiintyi Suomessa enemmän maaseudulla kuin kaupungeissa – ei enää, sanoo uusi tutkimus](https://www.ess.fi/uutissuomalainen/6018026). Etelä-Suomen Sanomat
+- [Asetelma kääntyi Suomessa: mielenterveyden häiriöitä esiintyy enemmän kaupungeissa kuin maaseudulla](https://www.kainuunsanomat.fi/artikkeli/asetelma-kaantyi-suomessa-mielenterveyden-hairioita-esiintyy-enemman-kaupungeissa-kuin-maaseudulla). Kainuun Sanomat
+- [Tampereen yliopiston tutkimus: psykooseja ja muita mielenterveyden häiriöitä esiintyy eniten kaupungeissa](https://www.aamulehti.fi/kotimaa/art-2000009669630.html). Aamulehti
+
+### Excess mortality related to mental disorders
+
+Excess mortality among people with mental disorders is a well-known phenomenon, but excess mortality is usually studied in secondary care settings.
+
+The inclusion of individuals in both primary and secondary care settings revealed clearly lower estimates of excess mortality in treated mental disorders compared to analyses that only considered secondary care data. The majority of individuals with recently treated mental disorders had contact only with primary care services. 
+
+The current findings not only sharpen the established view of a dramatically shortened life-expectancy related to mental disorders but also provide a more optimistic view of the burden of mental disorders and highlights the diversity of these disorders in the population. To the best of our knowledge, this is the first nationwide study on mortality in treated mental disorders to include both primary and secondary care data.
+
+#### References
+
+- `r pubs[reference %like% "10.1002/wps.21027", ref_link]`
+- `r pubs[ref_link %like% "duo17158", ref_link]` Invited editorial.
+
+#### Media
+
+- [Press release](https://www.sttinfo.fi/tiedote/69960285/mielenterveyden-hairioihin-liittyva-kuolleisuus-on-aiemmin-arvioitua-vahaisempaa?publisherId=69818730)
+- [Mielenterveyden häiriöihin liittyvä kuolleisuus on arvioitua vähäisempää](https://www.laakarilehti.fi/terveydenhuolto/mielenterveyden-hairioihin-liittyva-kuolleisuus-on-arvioitua-vahaisempaa/). Lääkärilehti
+
+
+## Data and methodology
+
+National registers from [TRIAD](https://thl.fi/fi/tutkimus-ja-kehittaminen/tutkimukset-ja-hankkeet/epaonnen-kolmikko-mielenterveyden-hairiot-somaattinen-sairastavuus-ja-sosiaalinen-syrjaytyminen-elamankaarella-triad-){target="_blank"}: The unhappy triad - Mental disorders, somatic illness and socioeconomic deprivation in different phases of life - project have been used.
+
+### Pre-processing of the register: Identifying treamtment episodes
+
+The scripts called [hilmo_identify_episodes](https://github.com/kmmsks/hilmo_identify_episodes) have been made publicly available in order to enable others to evaluate and benefit from this effort. We call for open science principles and collaborative development of readily available methods for saving researchers' time and enhancing research quality by improving comparability and reproducibility of results. 
+
+In this study, we showed that registers with continuous and mainly automatized data collection, such as the Finnish healthcare registers, contain partly overlapping register entries and preliminary diagnoses. The methods employed in pre-processing register data significantly impact the metrics derived from the registers. Regarding lifetime incidence of mental disorders, schizophrenia spectrum disorders require a particular focus on data pre-processing.
+
+#### References:
+
+- Suokas K, Gutvilig M, Pirkola S, Lumme S, Hakulinen C. Enhancing the accuracy of register-based metrics: Comparing methods for handling overlapping psychiatric register entries in Finnish healthcare registries. Submitted.
+
+- Suokas, K (2023). hilmo_identify_episodes (v2.0.0) [Source code]. <https://github.com/kmmsks/hilmo_identify_episodes>. doi: [10.5281/zenodo.4095153](https://zenodo.org/records/10171088).
+
+

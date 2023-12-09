@@ -1,0 +1,110 @@
+---
+title: "Publications"
+execute:
+  echo: false
+---
+  
+```{r}
+library(magrittr)
+library(data.table)
+library(gt)
+library(scholar)
+
+pubs <- fread("../publications/publications.csv")
+
+id <- 'e1whCCAAAAAJ'
+l <- scholar::get_profile(id)
+
+```
+
+Altogether, **`r nrow(pubs)`** publications with **`r l$total_cites`** cites, h-index of **`r l$h_index`**, and i10-index of **`r l$i10_index`** in Google Scholar
+
+## Peer-Reviewed Scientific Articles
+
+```{r}
+pubs[aka_category =="a", .(n = rev(.I) ,  ref_link)] %>% 
+  gt() %>% 
+     fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    n ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+) %>% 
+    tab_style(
+    style = "vertical-align:top",
+    locations = cells_body(
+      columns = n
+      )
+  ) 
+
+```
+
+## Non-Refereed Scientific Articles
+
+```{r}
+pubs[aka_category =="b", .(n = rev(.I) ,  ref_link)] %>% 
+  gt() %>% 
+     fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    n ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+) %>% 
+    tab_style(
+    style = "vertical-align:top",
+    locations = cells_body(
+      columns = n
+      )
+  ) 
+
+
+```
+
+## Publications Intended for Professional Communities
+
+```{r}
+pubs[aka_category =="d", .(n = rev(.I) ,  ref_link)] %>% 
+  gt() %>% 
+     fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    n ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+) %>% 
+    tab_style(
+    style = "vertical-align:top",
+    locations = cells_body(
+      columns = n
+      )
+  ) 
+
+
+```
+

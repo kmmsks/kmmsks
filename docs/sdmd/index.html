@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Kimmo Suokas - Social determinants of mental disorders in Finland - a register-based study</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Kimmo Suokas</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../sdmd/index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">SDMD</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About me</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0001-6296-6343" rel="" target="_blank">
+ <span class="menu-text"><i class="ai  ai-orcid"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=e1whCCAAAAAJ&amp;hl=fi&amp;oi=ao" rel="" target="_blank">
+ <span class="menu-text"><i class="ai  ai-google-scholar"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/kmmsks/" rel="" target="_blank"><i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aims" id="toc-aims" class="nav-link active" data-scroll-target="#aims">Aims</a></li>
+  <li><a href="#rationale" id="toc-rationale" class="nav-link" data-scroll-target="#rationale">Rationale</a></li>
+  <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">Topics</a>
+  <ul class="collapse">
+  <li><a href="#household-income-and-the-inidence-of-first-psychiatric-hospital-admissions" id="toc-household-income-and-the-inidence-of-first-psychiatric-hospital-admissions" class="nav-link" data-scroll-target="#household-income-and-the-inidence-of-first-psychiatric-hospital-admissions">Household income and the inidence of first psychiatric hospital admissions</a></li>
+  <li><a href="#regional-and-urban-rural-variations-in-the-prevalence-of-mental-disorders" id="toc-regional-and-urban-rural-variations-in-the-prevalence-of-mental-disorders" class="nav-link" data-scroll-target="#regional-and-urban-rural-variations-in-the-prevalence-of-mental-disorders">Regional and urban-rural variations in the prevalence of mental disorders</a></li>
+  <li><a href="#excess-mortality-related-to-mental-disorders" id="toc-excess-mortality-related-to-mental-disorders" class="nav-link" data-scroll-target="#excess-mortality-related-to-mental-disorders">Excess mortality related to mental disorders</a></li>
+  </ul></li>
+  <li><a href="#data-and-methodology" id="toc-data-and-methodology" class="nav-link" data-scroll-target="#data-and-methodology">Data and methodology</a>
+  <ul class="collapse">
+  <li><a href="#pre-processing-of-the-register-identifying-treamtment-episodes" id="toc-pre-processing-of-the-register-identifying-treamtment-episodes" class="nav-link" data-scroll-target="#pre-processing-of-the-register-identifying-treamtment-episodes">Pre-processing of the register: Identifying treamtment episodes</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Social determinants of mental disorders in Finland - a register-based study</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="aims" class="level2">
+<h2 class="anchored" data-anchor-id="aims">Aims</h2>
+<p>This project aims</p>
+<ul>
+<li>to update some fundamental descriptive analysis of the epidemiology of mental disorders in Finland, including primary and secondary care data</li>
+<li>to analyze the dynamic interplay between socioeconomic factors and mental health over the life-course and on multiple levels, and</li>
+<li>to improve conditions and methodologies in register-based research by adopting principles of open science.</li>
+</ul>
+</section>
+<section id="rationale" class="level2">
+<h2 class="anchored" data-anchor-id="rationale">Rationale</h2>
+<p>Despite the advancements made in analytical epidemiology concerning mental disorders, the role of descriptive analysis remains important for comprehending the landscape of psychiatry and mental health. Trends such as deinstitutionalization, changes in attitudes towards mental disorders, the integration of mental health into primary care, and economical and political transformations all underscore the need for continuously updated descriptive statistics and monitoring. These efforts serve not only to enlighten both the public and clinicians but also to facilitate informed dialogues on optimal practices.</p>
+<p>Depression and anxiety are among the top 10 most common reasons for visits to primary care, but much of the register-based research has been conducted using secondary care data only. Our aim is to expand our analysis to include primary care as well as secondary care mental health services.</p>
+<p>So far, this project has focused on certain classical questions in psychiatric epidemiology:</p>
+</section>
+<section id="topics" class="level2">
+<h2 class="anchored" data-anchor-id="topics">Topics</h2>
+<section id="household-income-and-the-inidence-of-first-psychiatric-hospital-admissions" class="level3">
+<h3 class="anchored" data-anchor-id="household-income-and-the-inidence-of-first-psychiatric-hospital-admissions">Household income and the inidence of first psychiatric hospital admissions</h3>
+<p>This study is one of only a few studies reporting incidence rates in all first psychiatric admissions, and to the best of our knowledge, it is the first national-level study showing that a robust income gradient is present in the incidence rates of first hospitalizations due to mental disorders. Household income appears to be an important risk factor for first hospital-treated mental disorders at all levels of income.</p>
+<p>Between 1994 and 2014 in Finland, the age-standardized annual incidence rate of first hospital admissions peaked in 2008 and subsequently began to decline. Following this study, two other Finnish papers have reported similar findings of increasing first admissions among adolescents and in children, adolescents and young adults. The observed increase in first admissions during a time when outpatient-centered services dominate, raises some concerns about the effectiveness of outpatient care in managing acute and severe mental disturbances.</p>
+<section id="awards" class="level4">
+<h4 class="anchored" data-anchor-id="awards">Awards</h4>
+<p>This study won the Publication of the Year by <a href="www.psy.fi/en">Finnish Psychiatric Association</a> in 2020 and the <a href="https://www.europsy.net/2021-winners/">Research Prize</a> by the <a href="www.europsy.net">European Psychiatric Association (EPA)</a> in 2021 awards.</p>
+</section>
+<section id="references" class="level4">
+<h4 class="anchored" data-anchor-id="references">References</h4>
+<ul>
+<li><strong>Suokas K</strong>, Koivisto AM, Hakulinen C, Kaltiala R, Sund R, Lumme S, Kampman O, Pirkola S. Association of Income With the Incidence Rates of First Psychiatric Hospital Admissions in Finland, 1996-2014. JAMA Psychiatry. 2020;77(3):274. doi:10.1001/jamapsychiatry.2019.3647 <a href="http://dx.doi.org/10.1001/jamapsychiatry.2019.3647">link</a></li>
+</ul>
+</section>
+<section id="media-mainly-in-finnish" class="level4">
+<h4 class="anchored" data-anchor-id="media-mainly-in-finnish">Media (mainly in Finnish)</h4>
+<ul>
+<li><a href="https://www.tuni.fi/fi/ajankohtaista/tulojen-ja-ensimmaisen-psykiatrisen-sairaalahoidon-valilla-selva-yhteys">Press release</a></li>
+<li><a href="https://yle.fi/a/3-11129680">Tutkimus: Köyhät päätyvät rikkaampia useammin psykiatriseen sairaalahoitoon</a>. YLE</li>
+<li><a href="https://kuntalehti.fi/uutiset/sote/analyysi-mielen-hyvinvoinnin-tukeminen-on-osa-kasautuvan-huono-osaisuuden-ehkaisya/">Analyysi: Mielen hyvinvoinnin tukeminen on osa kasautuvan huono-osaisuuden ehkäisyä</a>. Kuntalehti</li>
+</ul>
+</section>
+</section>
+<section id="regional-and-urban-rural-variations-in-the-prevalence-of-mental-disorders" class="level3">
+<h3 class="anchored" data-anchor-id="regional-and-urban-rural-variations-in-the-prevalence-of-mental-disorders">Regional and urban-rural variations in the prevalence of mental disorders</h3>
+<p>In Finland, prevalence of schizophrenia is higher in the eastern and northern regions and co-occurs with the distribution of schizophrenia polygenic risk scores. Both genetic and environmental factors have been hypothesized to contribute to this variation. There are well-known differences in population health and genetics that follow a distinct east-west gradient.</p>
+<p>We showed, however, that after adjusting for socioeconomic and sociodemographic factors, the within-country distribution of mental disorders no longer followed the traditional east–west gradient. Urban–rural differences, on the other hand, persisted after the adjustments.</p>
+<section id="references-1" class="level4">
+<h4 class="anchored" data-anchor-id="references-1">References</h4>
+<ul>
+<li><strong>Suokas K</strong>, Kurkela O, Nevalainen J, Suvisaari J, Hakulinen C, Kampman O, Pirkola S. Geographical variation in treated psychotic and other mental disorders in Finland by region and urbanicity. Social Psychiatry and Psychiatric Epidemiology. Published online June 13, 2023. doi:10.1007/s00127-023-02516-x <a href="http://dx.doi.org/10.1007/s00127-023-02516-x">link</a></li>
+</ul>
+</section>
+<section id="media" class="level4">
+<h4 class="anchored" data-anchor-id="media">Media</h4>
+<ul>
+<li><a href="https://www.tuni.fi/fi/ajankohtaista/mielenterveyshairiot-yleisempia-kaupungeissa-korkeammasta-tulotasosta-huolimatta">Press release</a></li>
+<li><a href="https://www.hameensanomat.fi/uutissuomalainen/6018026">Ennen psykooseja esiintyi Suomessa enemmän maaseudulla kuin kaupungeissa – ei enää, sanoo uusi tutkimus</a>. Hämeen Sanomat</li>
+<li><a href="https://www.ess.fi/uutissuomalainen/6018026">Ennen psykooseja esiintyi Suomessa enemmän maaseudulla kuin kaupungeissa – ei enää, sanoo uusi tutkimus</a>. Etelä-Suomen Sanomat</li>
+<li><a href="https://www.kainuunsanomat.fi/artikkeli/asetelma-kaantyi-suomessa-mielenterveyden-hairioita-esiintyy-enemman-kaupungeissa-kuin-maaseudulla">Asetelma kääntyi Suomessa: mielenterveyden häiriöitä esiintyy enemmän kaupungeissa kuin maaseudulla</a>. Kainuun Sanomat</li>
+<li><a href="https://www.aamulehti.fi/kotimaa/art-2000009669630.html">Tampereen yliopiston tutkimus: psykooseja ja muita mielenterveyden häiriöitä esiintyy eniten kaupungeissa</a>. Aamulehti</li>
+</ul>
+</section>
+</section>
+<section id="excess-mortality-related-to-mental-disorders" class="level3">
+<h3 class="anchored" data-anchor-id="excess-mortality-related-to-mental-disorders">Excess mortality related to mental disorders</h3>
+<p>Excess mortality among people with mental disorders is a well-known phenomenon, but excess mortality is usually studied in secondary care settings.</p>
+<p>The inclusion of individuals in both primary and secondary care settings revealed clearly lower estimates of excess mortality in treated mental disorders compared to analyses that only considered secondary care data. The majority of individuals with recently treated mental disorders had contact only with primary care services.</p>
+<p>The current findings not only sharpen the established view of a dramatically shortened life-expectancy related to mental disorders but also provide a more optimistic view of the burden of mental disorders and highlights the diversity of these disorders in the population. To the best of our knowledge, this is the first nationwide study on mortality in treated mental disorders to include both primary and secondary care data.</p>
+<section id="references-2" class="level4">
+<h4 class="anchored" data-anchor-id="references-2">References</h4>
+<ul>
+<li><strong>Suokas K</strong>, Hakulinen C, Sund R, Kampman O, Pirkola S. Mortality in persons with recent primary or secondary care contacts for mental disorders in Finland. World Psychiatry. 2022;21(3):470-471. doi:10.1002/wps.21027 <a href="http://dx.doi.org/10.1002/wps.21027">link</a></li>
+<li><strong>Suokas K</strong>, Hakulinen C, Sami Pirkola S. Tieto mielenterveyden häiriöihin liittyvästä kuolleisuudesta tarkentuu. Duodecim; Laaketieteellinen Aikakauskirja. 2023;139(8):597-599 <a href="https://www.duodecimlehti.fi/duo17158">link</a> Invited editorial.</li>
+</ul>
+</section>
+<section id="media-1" class="level4">
+<h4 class="anchored" data-anchor-id="media-1">Media</h4>
+<ul>
+<li><a href="https://www.sttinfo.fi/tiedote/69960285/mielenterveyden-hairioihin-liittyva-kuolleisuus-on-aiemmin-arvioitua-vahaisempaa?publisherId=69818730">Press release</a></li>
+<li><a href="https://www.laakarilehti.fi/terveydenhuolto/mielenterveyden-hairioihin-liittyva-kuolleisuus-on-arvioitua-vahaisempaa/">Mielenterveyden häiriöihin liittyvä kuolleisuus on arvioitua vähäisempää</a>. Lääkärilehti</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="data-and-methodology" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-methodology">Data and methodology</h2>
+<p>National registers from <a href="https://thl.fi/fi/tutkimus-ja-kehittaminen/tutkimukset-ja-hankkeet/epaonnen-kolmikko-mielenterveyden-hairiot-somaattinen-sairastavuus-ja-sosiaalinen-syrjaytyminen-elamankaarella-triad-" target="_blank">TRIAD</a>: The unhappy triad - Mental disorders, somatic illness and socioeconomic deprivation in different phases of life - project have been used.</p>
+<section id="pre-processing-of-the-register-identifying-treamtment-episodes" class="level3">
+<h3 class="anchored" data-anchor-id="pre-processing-of-the-register-identifying-treamtment-episodes">Pre-processing of the register: Identifying treamtment episodes</h3>
+<p>The scripts called <a href="https://github.com/kmmsks/hilmo_identify_episodes">hilmo_identify_episodes</a> have been made publicly available in order to enable others to evaluate and benefit from this effort. We call for open science principles and collaborative development of readily available methods for saving researchers’ time and enhancing research quality by improving comparability and reproducibility of results.</p>
+<p>In this study, we showed that registers with continuous and mainly automatized data collection, such as the Finnish healthcare registers, contain partly overlapping register entries and preliminary diagnoses. The methods employed in pre-processing register data significantly impact the metrics derived from the registers. Regarding lifetime incidence of mental disorders, schizophrenia spectrum disorders require a particular focus on data pre-processing.</p>
+<section id="references-3" class="level4">
+<h4 class="anchored" data-anchor-id="references-3">References:</h4>
+<ul>
+<li><p>Suokas K, Gutvilig M, Pirkola S, Lumme S, Hakulinen C. Enhancing the accuracy of register-based metrics: Comparing methods for handling overlapping psychiatric register entries in Finnish healthcare registries. Submitted.</p></li>
+<li><p>Suokas, K (2023). hilmo_identify_episodes (v2.0.0) [Source code]. <a href="https://github.com/kmmsks/hilmo_identify_episodes" class="uri">https://github.com/kmmsks/hilmo_identify_episodes</a>. doi: <a href="https://zenodo.org/records/10171088">10.5281/zenodo.4095153</a>.</p></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

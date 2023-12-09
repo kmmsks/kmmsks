@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Kimmo Suokas"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: sdmd/index.qmd
+        text: SDMD
+      - href: publications/index.qmd
+        text: Publications
+      - href: about/index.qmd
+        text: About me
+    right:
+      - text: "{{< ai orcid >}}"
+        href: https://orcid.org/0000-0001-6296-6343
+        aria-label: Orcid
+        target: _blank
+      - text: "{{< ai google-scholar >}}"
+        href: https://scholar.google.com/citations?user=e1whCCAAAAAJ&hl=fi&oi=ao
+        aria-label: Google Scholar
+        target: _blank
+
+      - icon: github
+        href: https://github.com/kmmsks/
+        aria-label: GitHub
+        target: _blank
+      
+format:
+  html:
+    theme: 
+      - cosmo
+      - styles.scss
+    toc: true
+
+editor: visual
+

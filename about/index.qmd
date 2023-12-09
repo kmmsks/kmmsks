@@ -1,0 +1,113 @@
+---
+title: "Kimmo Suokas"
+execute:
+  echo: false
+---
+
+```{r}
+library(magrittr)
+library(data.table)
+library(gt)
+```
+
+
+## Education
+
+```{r}
+edu <- fread("data/education.csv")
+
+edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()), what = paste0("**", what, "**, ", institute))] %>%
+  gt() %>% 
+   fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    years ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+)
+```
+
+## Current work
+
+```{r}
+
+a <- data.table(years = 2023, what = '**Researcher, [Psychosocial factors and health - study group](https://www.helsinki.fi/en/researchgroups/psychosocial-factors-and-health)**', where = 'Department of Psychology and Logopedics, Faculty of Medicine, University of Helsinki.')
+
+b <- data.table(years = 2023, what = '**Researcher, [Out of Despair](https://ulosepatoivosta.fi/en/) - study**', where = '[Social Psychiatry](https://www.tuni.fi/en/about-us/social-psychiatry), Faculty of Social Sciences, Tampere university')
+
+c <- data.table(years = 2023, what = '**Consultant psychiatrist**', where = '[Psykiatrikonsultaatiot Hilla Oy](https://www.hillaoy.fi)')
+
+d <- data.table(years = 2019, what = '**Project Worker at the [Finnish Psychiatric Association](https://www.psy.fi/in_english)**', where = 'Member at the [Finnish Quality of Psychosis Care Register](https://repo.thl.fi/sites/laaturekisterit/psykoosienhoidonrekisteri.html) -team at the [National quality registers in healthcare and socialservices](https://thl.fi/fi/web/sote-palvelujen-johtaminen/arviointi-ja-seuranta/sote-tietopohja/terveydenhuollon-kansalliset-laaturekisterit/kansallisten-laaturekisterien-raportit) -project at the [Finnish Institute for Health and Welfare (THL)](https://thl.fi/en/web/thlfi-en)')
+
+rbindlist(list(a, b, c, d), idcol = "item") %>% .[,.(years = paste0(years, " ->"), what =paste0(what, " <br> ", where))] %>% 
+  gt() %>% 
+   fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    years ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+) %>% 
+    tab_style(
+    style = "vertical-align:top",
+    locations = cells_body(
+      columns = years
+      )
+  ) 
+```
+
+## Past work
+
+```{r}
+pos <- fread("data/positions.csv")
+
+a <- pos[language=="en" & !is.na(end_date), .(years = ifelse(year(start_date) == year(end_date), year(start_date),  paste0(year(start_date), "--", year(end_date))), item = paste0("<b>",what, "</b><br>", where, "<br>", details_1))] %>% head(-6) 
+b <- data.table(years = c("2011--2018"), item = paste0("**Specialising Physician** at ", pos[language == "en"] %>% 
+  tail(6) %>% 
+  .$where %>% 
+  paste(collapse = '; ')))
+
+rbindlist(list(a, b)) %>% 
+  gt() %>% 
+   fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    years ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+) %>% 
+  tab_style(
+    style = "vertical-align:top",
+    locations = cells_body(
+      columns = years
+      )
+  ) 
+
+
+
+```
+
