@@ -8,13 +8,16 @@ execute:
 library(magrittr)
 library(data.table)
 library(gt)
+
+edu <- fread("../data/education.csv")
+pos <- fread("../data/positions.csv")
+
 ```
 
 
 ## Education
 
 ```{r}
-edu <- fread("data/education.csv")
 
 edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()), what = paste0("**", what, "**, ", institute))] %>%
   gt() %>% 
@@ -75,8 +78,6 @@ rbindlist(list(a, b, c, d), idcol = "item") %>% .[,.(years = paste0(years, " ->"
 ## Past work
 
 ```{r}
-pos <- fread("data/positions.csv")
-
 a <- pos[language=="en" & !is.na(end_date), .(years = ifelse(year(start_date) == year(end_date), year(start_date),  paste0(year(start_date), "--", year(end_date))), item = paste0("<b>",what, "</b><br>", where, "<br>", details_1))] %>% head(-6) 
 b <- data.table(years = c("2011--2018"), item = paste0("**Specialising Physician** at ", pos[language == "en"] %>% 
   tail(6) %>% 
