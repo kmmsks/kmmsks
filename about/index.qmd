@@ -14,6 +14,7 @@ pos <- fread("../data/positions.csv")
 
 ```
 
+Last updated: `r format(Sys.Date(), '%d.%m.%Y')`
 
 ## Education
 

@@ -28,6 +28,10 @@ website:
         href: https://github.com/kmmsks/
         aria-label: GitHub
         target: _blank
+
+  page-footer: 
+    center: "Last updated {{< meta date >}}"
+
       
 format:
   html:
@@ -38,3 +42,4 @@ format:
 
 editor: visual
 
+date: last-modified
