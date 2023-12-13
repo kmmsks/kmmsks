@@ -17,7 +17,9 @@ l <- scholar::get_profile(id)
 
 ```
 
-Altogether, **`r nrow(pubs)`** publications with **`r l$total_cites`** cites, h-index of **`r l$h_index`**, and i10-index of **`r l$i10_index`** in Google Scholar. Date:  `r format(Sys.Date(), '%d.%m.%Y')`.
+Last updated: `r format(Sys.Date(), '%d.%m.%Y')`
+
+Altogether, **`r nrow(pubs)`** publications with **`r l$total_cites`** cites, h-index of **`r l$h_index`**, and i10-index of **`r l$i10_index`** in Google Scholar.
 
 ## Peer-Reviewed Scientific Articles
 
