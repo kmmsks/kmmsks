@@ -9,8 +9,8 @@ library(magrittr)
 library(data.table)
 library(gt)
 
-edu <- fread("../data/education.csv")
-pos <- fread("../data/positions.csv")
+edu <- fread("../data_personal/education.csv")
+pos <- fread("../data_personal/positions.csv")
 
 ```
 
@@ -112,4 +112,3 @@ rbindlist(list(a, b)) %>%
 
 
 ```
-

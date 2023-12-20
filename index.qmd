@@ -3,6 +3,7 @@ title: "Kimmo Suokas"
 execute:
   echo: false
 ---
+
 ```{r}
 library(magrittr)
 ```
@@ -11,41 +12,36 @@ Last updated: `r format(Sys.Date(), '%d.%m.%Y')`
 
 MD, psychiatrist. Interested in social psychiatry, and psychiatric and social epidemiology.
 
-
 ## Study projects
 
 ### Social determinants of mental disorders in Finland - a register-based study (SDMD)
 
 A study project using national register data of the [TRIAD](https://thl.fi/fi/tutkimus-ja-kehittaminen/tutkimukset-ja-hankkeet/epaonnen-kolmikko-mielenterveyden-hairiot-somaattinen-sairastavuus-ja-sosiaalinen-syrjaytyminen-elamankaarella-triad-){target="_blank"} - project, including
 
-- Interesting papers, including the publication of the year 2021 by EPA 
-- Open-source method for pre-processing Finnish healthcare registers
-- My PhD thesis
+-   Interesting papers, including the publication of the year 2021 by EPA
+-   Open-source method for pre-processing Finnish healthcare registers
+-   My PhD thesis
 
 [Read more](sdmd/index.html)
 
 ### Out of Despair
 
-- [Out of Despair](https://ulosepatoivosta.fi/en/){target="_blank"} focuses on violent, suicidal, and drug-induced deaths and near-miss cases of young people under 30.
-- Multiple data sources, such as linked registers, qualitative interviews, mini-ethnographies, and online discussions will be utilized.
-- The project is funded by The Strategic Research Council (SRC) in the Academy of Finland.
+-   [Out of Despair](https://ulosepatoivosta.fi/en/){target="_blank"} focuses on violent, suicidal, and drug-induced deaths and near-miss cases of young people under 30.
+-   Multiple data sources, such as linked registers, qualitative interviews, mini-ethnographies, and online discussions will be utilized.
+-   The project is funded by The Strategic Research Council (SRC) in the Academy of Finland.
 
 ### Finnish Quality of Psychosis Care Register
 
-- [Finnish Quality of Psychosis Care Register](https://repo.thl.fi/sites/laaturekisterit/psykoosienhoidonrekisteri.html){target="_blank"} is a part of  [National quality registers in healthcare and socialservices](https://thl.fi/fi/web/sote-palvelujen-johtaminen/arviointi-ja-seuranta/sote-tietopohja/terveydenhuollon-kansalliset-laaturekisterit/kansallisten-laaturekisterien-raportit) in Finland, hosted by the [Finnish Institute for Health and Welfare (THL)](https://thl.fi/en/web/thlfi-en){target="_blank"}
+-   [Finnish Quality of Psychosis Care Register](https://repo.thl.fi/sites/laaturekisterit/psykoosienhoidonrekisteri.html){target="_blank"} is a part of [National quality registers in healthcare and socialservices](https://thl.fi/fi/web/sote-palvelujen-johtaminen/arviointi-ja-seuranta/sote-tietopohja/terveydenhuollon-kansalliset-laaturekisterit/kansallisten-laaturekisterien-raportit) in Finland, hosted by the [Finnish Institute for Health and Welfare (THL)](https://thl.fi/en/web/thlfi-en){target="_blank"}
 
 ### The Finnish SUPER study
 
-- [The Finnish SUPER study](https://www.superfinland.fi/in-english){target="_blank"} on genetic mechanisms of psychotic disorders is a part of the international [Stanley Global Neuropsychiatric Genomics Initiative](https://www.broadinstitute.org/stanley-center-psychiatric-research/stanley-global){target="_blank"}. 
-- We have collected a sample of over 10,500 individuals with a history of diagnosed psychotic disorders. Studies of the genetics and fenotypes are on progress. 
-- See the [cohort profile](https://bmjopen.bmj.com/content/13/4/e070710){target="_blank"} for details about the prcodeures.
+-   [The Finnish SUPER study](https://www.superfinland.fi/in-english){target="_blank"} on genetic mechanisms of psychotic disorders is a part of the international [Stanley Global Neuropsychiatric Genomics Initiative](https://www.broadinstitute.org/stanley-center-psychiatric-research/stanley-global){target="_blank"}.
+-   We have collected a sample of over 10,500 individuals with a history of diagnosed psychotic disorders. Studies of the genetics and fenotypes are on progress.
+-   See the [cohort profile](https://bmjopen.bmj.com/content/13/4/e070710){target="_blank"} for details about the prcodeures.
 
 ## Other projects
 
 ### Tutkijan kevätkoulu
 
-[Tutkijan kevätkoulu](https://kmmsks.github.io/tkk/), Researcher’s Spring School at the National Psychiatry Meeting by the [Finnish Psychiatric Association](www.psy.fi) 
-
-
-
-
+[Tutkijan kevätkoulu](https://kmmsks.github.io/tkk/), Researcher’s Spring School at the National Psychiatry Meeting by the [Finnish Psychiatric Association](www.psy.fi)
