@@ -1,8 +1,0 @@
-language,degree,what,institute,location,start_date,end_date,details
-fi,TRUE,"Psykiatrian erikoislääkäri", "Tampereen yliopisto","Tampere, Suomi", "2012-08-01", "2018-02-19",""
-en,TRUE,"Specialist Degree in Psychiatry", "Tampere University","Tampere, Finland", "2012-08-01", "2018-02-19",""
-fi,TRUE,"Lääketieteen lisensiaatti", "Tampereen yliopisto", "Tampere, Suomi","2005-08-01", "2011-03-17",""
-en,TRUE,"MD", "Tampere University","Tampere, Finland","2005-08-01", "2011-03-17",""
-fi,FALSE,"Residential 3-week Summer Course", "[European Educational Programme in Epidemiology](https://eepe.org)", "Firenze, Italia", "2018-06-18", "2018-07-06",""
-en,FALSE,"Residential 3-week Summer Course", "[European Educational Programme in Epidemiology](https://eepe.org)", "Florence, Italy", "2018-06-18", "2018-07-06",""
-
