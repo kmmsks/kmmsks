@@ -20,7 +20,7 @@ A study project using national register data of the [TRIAD](https://thl.fi/fi/tu
 
 -   Interesting papers, including the publication of the year 2021 by EPA
 -   Open-source method for pre-processing Finnish healthcare registers
--   My PhD thesis
+-   My [PhD thesis](https://trepo.tuni.fi/handle/10024/153558)
 
 [Read more](sdmd/index.html)
 

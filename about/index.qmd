@@ -43,11 +43,11 @@ edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()
 
 ```{r}
 
-a <- data.table(years = 2023, what = '**Researcher, [Psychosocial factors and health - study group](https://www.helsinki.fi/en/researchgroups/psychosocial-factors-and-health)**', where = 'Department of Psychology and Logopedics, Faculty of Medicine, University of Helsinki.')
+a <- data.table(years = 2023, what = '**Researcher, [Psychosocial Factors and Health - study group](https://www.helsinki.fi/en/researchgroups/psychosocial-factors-and-health)**', where = 'Department of Psychology and Logopedics, Faculty of Medicine, University of Helsinki.')
 
-b <- data.table(years = 2023, what = '**Researcher, [Out of Despair](https://ulosepatoivosta.fi/en/) - study**', where = '[Social Psychiatry](https://www.tuni.fi/en/about-us/social-psychiatry), Faculty of Social Sciences, Tampere university')
+b <- data.table(years = 2023, what = '**Researcher, [Out of Despair](https://ulosepatoivosta.fi/en/) - Study**', where = '[Social Psychiatry](https://www.tuni.fi/en/about-us/social-psychiatry), Faculty of Social Sciences, Tampere university')
 
-c <- data.table(years = 2023, what = '**Consultant psychiatrist**', where = '[Psykiatrikonsultaatiot Hilla Oy](https://www.hillaoy.fi)')
+c <- data.table(years = 2023, what = '**Consultant Psychiatrist**', where = '[Psykiatrikonsultaatiot Hilla Oy](https://www.hillaoy.fi)')
 
 d <- data.table(years = 2019, what = '**Project Worker at the [Finnish Psychiatric Association](https://www.psy.fi/in_english)**', where = 'Member at the [Finnish Quality of Psychosis Care Register](https://repo.thl.fi/sites/laaturekisterit/psykoosienhoidonrekisteri.html) -team at the [National quality registers in healthcare and socialservices](https://thl.fi/fi/web/sote-palvelujen-johtaminen/arviointi-ja-seuranta/sote-tietopohja/terveydenhuollon-kansalliset-laaturekisterit/kansallisten-laaturekisterien-raportit) -project at the [Finnish Institute for Health and Welfare (THL)](https://thl.fi/en/web/thlfi-en)')
 
