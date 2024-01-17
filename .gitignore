@@ -43,7 +43,7 @@ vignettes/*.pdf
 
 /CV_R/
 
-/cv/
-aka_fi.qmd
+cv/
+/aka_fi.qmd
 
 /data_personal/
