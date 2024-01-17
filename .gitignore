@@ -37,9 +37,13 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+.DS_Store
 
 /.quarto/
 
 /CV_R/
 
-.DS_Store
+/cv/
+aka_fi.qmd
+
+/data_personal/
