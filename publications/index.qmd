@@ -3,7 +3,7 @@ title: "Publications"
 execute:
   echo: false
 ---
-  
+
 ```{r}
 library(magrittr)
 library(data.table)
@@ -46,7 +46,10 @@ pubs[aka_category =="a", .(n = rev(.I) ,  ref_link)] %>%
     locations = cells_body(
       columns = n
       )
-  ) 
+  ) %>% 
+  tab_style(style = cell_fill(color = "white"),
+            locations = cells_body())
+
 
 ```
 
@@ -75,7 +78,10 @@ pubs[aka_category =="b", .(n = rev(.I) ,  ref_link)] %>%
     locations = cells_body(
       columns = n
       )
-  ) 
+  ) %>% 
+  tab_style(style = cell_fill(color = "white"),
+            locations = cells_body())
+
 
 
 ```
@@ -105,8 +111,8 @@ pubs[aka_category =="d", .(n = rev(.I) ,  ref_link)] %>%
     locations = cells_body(
       columns = n
       )
-  ) 
-
+  ) %>% 
+  tab_style(style = cell_fill(color = "white"),
+            locations = cells_body())
 
 ```
-
