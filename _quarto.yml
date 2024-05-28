@@ -34,7 +34,7 @@ format:
   html:
     theme: 
       - cosmo
-      - styles.scss
+      - scss/styles.scss
     toc: true
     html-table-processing: none
 editor: visual

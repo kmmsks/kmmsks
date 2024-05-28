@@ -10,7 +10,7 @@ library(magrittr)
 
 Last updated: `r format(Sys.Date(), '%d.%m.%Y')`
 
-MD, psychiatrist. Interested in social psychiatry, and psychiatric and social epidemiology.
+MD, PhD, psychiatrist. Interested in social psychiatry, and psychiatric and social epidemiology.
 
 ## Study projects
 

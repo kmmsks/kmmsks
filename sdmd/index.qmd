@@ -35,7 +35,7 @@ So far, this project has focused on certain classical questions in psychiatric e
 
 ## Topics
 
-### Household income and the inidence of first psychiatric hospital admissions
+### Household income and the incidence of first psychiatric hospital admissions
 
 This study is one of only a few studies reporting incidence rates in all first psychiatric admissions, and to the best of our knowledge, it is the first national-level study showing that a robust income gradient is present in the incidence rates of first hospitalizations due to mental disorders. Household income appears to be an important risk factor for first hospital-treated mental disorders at all levels of income.
 
@@ -106,3 +106,16 @@ In this study, we showed that registers with continuous and mainly automatized d
 -   Suokas K, Gutvilig M, Pirkola S, Lumme S, Hakulinen C. Enhancing the accuracy of register-based metrics: Comparing methods for handling overlapping psychiatric register entries in Finnish healthcare registries. Submitted.
 
 -   Suokas, K (2023). hilmo_identify_episodes (v2.0.0) \[Source code\]. <https://github.com/kmmsks/hilmo_identify_episodes>. doi: [10.5281/zenodo.4095153](https://zenodo.org/records/10171088).
+
+## My PhD thesis
+
+[Link](https://trepo.tuni.fi/handle/10024/153558) to the thesis document. 
+
+### Media
+
+- [Rekisteritieto päivittää perustietämystä väestön mielenterveyshäiriöistä](https://www.tuni.fi/fi/ajankohtaista/kimmo-suokas-rekisteritieto-paivittaa-perustietamysta-vaeston-mielenterveyshairioista). Tampereen yliopisto: tiedote.
+
+- [Tutkija löysi yllättävää uutta tietoa Suomen mielenterveyspotilaista: kuolleisuus luultua vähäisempää, itä eroaa lännestä](https://yle.fi/a/74-20081831). Yle
+
+- [Mielenterveyden häiriöihin liittyvä kuolleisuus arvioitua vähäisempää](https://www.laakarilehti.fi/tieteessa/mielenterveyden-hairioihin-liittyva-kuolleisuus-arvioitua-vahaisempaa/) Suomen Lääkärilehti.
+
