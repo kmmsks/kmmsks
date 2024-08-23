@@ -87,7 +87,10 @@ pubs[, ref_link := glue::glue("{pubs$reference} [link]({pubs$url})")]
 
 excl <- pubs_from_dois_table %>% as.data.table() %>%  .[, .SD[.N>1 & type != "journal-article"], title] %>% .[,doi]
 
-pubs <- pubs[!doi %in% excl]
+# manual
+excl_manual <- c("10.1101/2023.12.07.23299655")
+ 
+pubs <- pubs[!doi %in% c(excl, excl_manual)]
 
 # save -------------------------------------------------------------------------
 fwrite(pubs, here('publications', 'publications.csv'))
