@@ -103,7 +103,7 @@ In this study, we showed that registers with continuous and mainly automatized d
 
 #### References:
 
--   Suokas K, Gutvilig M, Pirkola S, Lumme S, Hakulinen C. Enhancing the accuracy of register-based metrics: Comparing methods for handling overlapping psychiatric register entries in Finnish healthcare registries. Submitted.
+-   Suokas, K.,  Gutvilig, M.,  Lumme, S.,  Pirkola, S., &  Hakulinen, C. (2024).  Enhancing the accuracy of register-based metrics: Comparing methods for handling overlapping psychiatric register entries in Finnish healthcare registers. *International Journal of Methods in Psychiatric Research*, e2029. <https://doi.org/10.1002/mpr.2029>
 
 -   Suokas, K (2023). hilmo_identify_episodes (v2.0.0) \[Source code\]. <https://github.com/kmmsks/hilmo_identify_episodes>. doi: [10.5281/zenodo.4095153](https://zenodo.org/records/10171088).
 
