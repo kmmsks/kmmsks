@@ -1,5 +1,5 @@
 Kimmo Suokas
-MD, PhD, psychiatrist. Interested in social psychiatry, and psychiatric and social epidemiology.
+MD, PhD, psychiatrist. Interested in social psychiatry and epidemiology.
 
 https://kmmsks.github.io/kmmsks/
 
