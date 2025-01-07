@@ -92,6 +92,8 @@ excl_manual <- c("10.1101/2023.12.07.23299655")
  
 pubs <- pubs[!doi %in% c(excl, excl_manual)]
 
+#
+
 # save -------------------------------------------------------------------------
 fwrite(pubs, here('publications', 'publications.csv'))
 

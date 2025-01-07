@@ -1,4 +1,5 @@
 peer_reviewed,aka_category,year_month,reference, url
+TRUE,"g","2024-04","Suokas K. Social Determinants of Mental Disorders in Finland : A Register-Based Study. Tampere University; 2024.","https://trepo.tuni.fi/handle/10024/153558"
 TRUE,"b","2022-12","Suokas K, Hakulinen C, Sami Pirkola S. Tieto mielenterveyden häiriöihin liittyvästä kuolleisuudesta tarkentuu. Duodecim; Laaketieteellinen Aikakauskirja. 2023;139(8):597-599", "https://www.duodecimlehti.fi/duo17158"
 TRUE,"a","2014-01","Suokas K, Kampman O. Autoimmuunienkefaliitti psykoosinaiheuttajana [Autoimmune Encephalitis as a Cause of Psychosis]. Duodecim; Laaketieteellinen Aikakauskirja. 2014;130(5):469-474", "https://www.duodecimlehti.fi/duo11531"
 FALSE,"d","2017-11","Suokas K. DSM-5 ja addiktion ongelma [DSM-5 and Issues Related to Addiction]. Suomen Lääkärilehti. 2017;72(44):2509", "https://www.laakarilehti.fi/arkisto/keskustelua/dsm-5-ja-addiktion-ongelmat/"

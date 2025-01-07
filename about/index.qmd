@@ -45,13 +45,12 @@ edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()
 
 a <- data.table(years = 2023, what = '**Researcher, [Psychosocial Factors and Health - study group](https://www.helsinki.fi/en/researchgroups/psychosocial-factors-and-health)**', where = 'Department of Psychology and Logopedics, Faculty of Medicine, University of Helsinki.')
 
-b <- data.table(years = 2023, what = '**Researcher, [Out of Despair](https://ulosepatoivosta.fi/en/) - Study**', where = '[Social Psychiatry](https://www.tuni.fi/en/about-us/social-psychiatry), Faculty of Social Sciences, Tampere university')
 
-c <- data.table(years = 2023, what = '**Consultant Psychiatrist**', where = '[Psykiatrikonsultaatiot Hilla Oy](https://www.hillaoy.fi)')
+b <- data.table(years = 2023, what = '**Consultant Psychiatrist**', where = '[Psykiatrikonsultaatiot Hilla Oy](https://www.hillaoy.fi)')
 
-d <- data.table(years = 2019, what = '**Project Worker at the [Finnish Psychiatric Association](https://www.psy.fi/in_english)**', where = 'Member at the [Finnish Quality of Psychosis Care Register](https://repo.thl.fi/sites/laaturekisterit/psykoosienhoidonrekisteri.html) -team at the [National quality registers in healthcare and socialservices](https://thl.fi/fi/web/sote-palvelujen-johtaminen/arviointi-ja-seuranta/sote-tietopohja/terveydenhuollon-kansalliset-laaturekisterit/kansallisten-laaturekisterien-raportit) -project at the [Finnish Institute for Health and Welfare (THL)](https://thl.fi/en/web/thlfi-en)')
+c <- data.table(years = 2019, what = '**Project Worker at the [Finnish Psychiatric Association](https://www.psy.fi/in_english)**', where = 'Member at the [Finnish Quality of Psychosis Care Register](https://repo.thl.fi/sites/laaturekisterit/psykoosienhoidonrekisteri.html) -team at the [National quality registers in healthcare and socialservices](https://thl.fi/fi/web/sote-palvelujen-johtaminen/arviointi-ja-seuranta/sote-tietopohja/terveydenhuollon-kansalliset-laaturekisterit/kansallisten-laaturekisterien-raportit) -project at the [Finnish Institute for Health and Welfare (THL)](https://thl.fi/en/web/thlfi-en)')
 
-rbindlist(list(a, b, c, d), idcol = "item") %>% .[,.(years = paste0(years, " ->"), what =paste0(what, " <br> ", where))] %>% 
+rbindlist(list(a, b, c), idcol = "item") %>% .[,.(years = paste0(years, " ->"), what =paste0(what, " <br> ", where))] %>% 
   gt() %>% 
    fmt_markdown(columns = everything()) %>% 
   tab_options(
