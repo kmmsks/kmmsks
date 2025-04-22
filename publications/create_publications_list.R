@@ -8,7 +8,7 @@
 
 # Load packages ----------------------------------------------------------------
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(here, dplyr, glue, stringr, zoo, rorcid, tools, RefManageR, rcrossref, usethis, data.table, magrittr)
+pacman::p_load(here, dplyr, glue, stringr, zoo, rorcid, tools, RefManageR, rcrossref, usethis, data.table, magrittr, scholar)
 
 library(rcrossref)
 

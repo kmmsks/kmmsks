@@ -111,6 +111,8 @@ In this study, we showed that registers with continuous and mainly automatized d
 
 [Link](https://trepo.tuni.fi/handle/10024/153558) to the thesis document.
 
+The thesis was granted the Martti Kaila Award for an Outstanding Doctoral Dissertation 2025 by the Finnish Psychiatric Association ([link](https://psy.fi/martti-kaila-palkinto-2024/)) and and received a University of Tampere Foundation Grant for a doctoral dissertation accepted with distinction.
+
 ### Media
 
 -   [Rekisteritieto päivittää perustietämystä väestön mielenterveyshäiriöistä](https://www.tuni.fi/fi/ajankohtaista/kimmo-suokas-rekisteritieto-paivittaa-perustietamysta-vaeston-mielenterveyshairioista). Tampereen yliopisto: tiedote.
