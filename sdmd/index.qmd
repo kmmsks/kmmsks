@@ -35,6 +35,25 @@ So far, this project has focused on certain classical questions in psychiatric e
 
 ## Topics
 
+### Lifetime incidence, age of onset, and 12-month service utilization related to mental disorders in primary and secondary care
+
+This study is the first using both primary and secondary care nationwide administrative data to answer the question hoe common are mental disorders.
+
+Lifetime incidence of any diagnosed mental disorder at age 100 was 76.7% in women and 69.7%. At age 75, stricter estimates for non-organic disorders (ICD-10: F10–F99) were 65.6% for women and 60.0% (59.9–60.1).
+
+#### Reference
+
+-   `r pubs[reference %like% "10.1017/s2045796025100061", ref_link]`
+
+#### Media
+
+-   [Press release](https://www.helsinki.fi/fi/uutiset/vaeston-terveys/mielenterveyden-hairiot-koskettavat-valtaosaa-suomalaisista)
+-   [Valtaosa suomalaisista saa mielenterveyshäiriön diagnoosin](https://yle.fi/a/74-20169733). YLE
+-   [Yli 70 prosenttia suomalais­naisista saa diagnoosin elämänsä aikana, kertoo tuore tutkimus](https://www.hs.fi/tiede/art-2000011326509.html). HS
+-   [Noin 77 prosenttia suomalaisista naisista saa diagnoosin mielenterveyshäiriöön elämänsä aikana – poikien ensimmäinen diagnoosi usein jo kuusivuotiaana](https://www.ksml.fi/uutissuomalainen/8637126) Keskisuomalainen
+-   [Yli 70 prosenttia naisista saa tämän diagnoosin](https://www.iltalehti.fi/mielijamasennus/a/a535dbbe-44dc-4395-b2ec-fc5de9a0ee7d) Iltalehti
+-   [Mielenterveyden häiriöt koskettavat valtaosaa suomalaisista](https://www.laakarilehti.fi/terveydenhuolto/mielenterveyden-hairiot-koskettavat-valtaosaa-suomalaisista/) Lääkärilehti
+
 ### Household income and the incidence of first psychiatric hospital admissions
 
 This study is one of only a few studies reporting incidence rates in all first psychiatric admissions, and to the best of our knowledge, it is the first national-level study showing that a robust income gradient is present in the incidence rates of first hospitalizations due to mental disorders. Household income appears to be an important risk factor for first hospital-treated mental disorders at all levels of income.
