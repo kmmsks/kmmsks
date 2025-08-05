@@ -46,7 +46,7 @@ edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()
 a <- data.table(years = 2023, what = '**Researcher, [Psychosocial Factors and Health - study group](https://www.helsinki.fi/en/researchgroups/psychosocial-factors-and-health)**', where = 'Department of Psychology and Logopedics, Faculty of Medicine, University of Helsinki.')
 
 
-b <- data.table(years = 2023, what = '**Consultant Psychiatrist**', where = '[Psykiatrikonsultaatiot Hilla Oy](https://www.hillaoy.fi)')
+b <- data.table(years = 2023, what = '**Consultant Psychiatrist**', where = '[Psykiatrikonsultaatiot Hilla Oy and Mehiläinen](https://www.hillaoy.fi)')
 
 c <- data.table(years = 2019, what = '**Project Worker at the [Finnish Psychiatric Association](https://www.psy.fi/in_english)**', where = 'Member at the [Finnish Quality of Psychosis Care Register](https://repo.thl.fi/sites/laaturekisterit/psykoosienhoidonrekisteri.html) -team at the [National quality registers in healthcare and socialservices](https://thl.fi/fi/web/sote-palvelujen-johtaminen/arviointi-ja-seuranta/sote-tietopohja/terveydenhuollon-kansalliset-laaturekisterit/kansallisten-laaturekisterien-raportit) -project at the [Finnish Institute for Health and Welfare (THL)](https://thl.fi/en/web/thlfi-en)')
 
@@ -74,6 +74,44 @@ rbindlist(list(a, b, c), idcol = "item") %>% .[,.(years = paste0(years, " ->"), 
       )
   ) 
 ```
+
+
+## Awards
+
+```{r}
+
+list(
+  data.table(years = 2025, what = '**Martti Kaila Award** for an Outstanding Doctoral Dissertation in 2024 by the [Finnish Psychiatric Association](https://psy.fi/martti-kaila-palkinto-2024/)'),
+  data.table(years = 2025, what = 'University of Tampere Foundation Grant for a doctoral dissertation accepted with distinction 2025'),
+  data.table(years = 2021, what = '[Research Prize](https://www.europsy.net/previous-winners/) by the European Psychiatric Association (EPA)'),
+  data.table(years = 2020, what = '**Publication of the Year** award by the Finnish Psychiatric Association')) %>% 
+  rbindlist() %>% 
+   gt() %>% 
+   fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    years ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+) %>% 
+  tab_style(
+    style = "vertical-align:top",
+    locations = cells_body(
+      columns = years
+      )
+  ) 
+
+
+```
+
 
 ## Past work
 
