@@ -14,7 +14,23 @@ I’m an MD, PhD, and psychiatrist with research interests in social psychiatry 
 
 ## Study projects
 
+### Mortalty in Mental Disorders and Genetic Liability at the Population Level: A Register-Based Study Using ICD-11
+
+Role: Principal Investigator
+
+This nationwide register-based study examines population-level mortality and years of life lost associated with mental disorders, accounting for diagnoses across primary and specialized healthcare, comorbidity, and genetic liability.
+
+-   Mental disorders are harmonized using the ICD-11 classification, with diagnoses from earlier ICD versions systematically mapped to ICD-11 categories.
+
+-   The study applies established register-based methods alongside novel approaches that capture time-varying mortality risks and genetic liability.
+
+-   Preliminary findings suggest lower excess mortality than previously reported when all treated mental disorders are considered, providing new insights into treatment needs and healthcare system functioning.
+
+*Funded by [The Finnish Medical Foundation](https://laaketieteensaatio.fi/en/home/) (2026).*
+
 ### Social Determinants of Mental Disorders in Finland (SDMD) – A Register-Based Study
+
+Extended PhD project 2018-2025
 
 A study project using national register data from the [**TRIAD**](https://thl.fi/fi/tutkimus-ja-kehittaminen/tutkimukset-ja-hankkeet/epaonnen-kolmikko-mielenterveyden-hairiot-somaattinen-sairastavuus-ja-sosiaalinen-syrjaytyminen-elamankaarella-triad-){target="_blank"} **project**, focusing on the social determinants of mental disorders in Finland.
 
@@ -28,7 +44,9 @@ Highlights include:
 
 ### Out of Despair
 
-Out of Despair examines violent, suicidal, and drug-induced deaths—and near-miss cases—among young people under 30.
+Role: Co-Investigator, 2023 ->
+
+[Out of Despair](https://ulosepatoivosta.fi/en/) examines violent, suicidal, and drug-induced deaths—and near-miss cases—among young people under 30.
 
 Key features:
 
@@ -38,11 +56,15 @@ Key features:
 
 ### Finnish Quality of Psychosis Care Register
 
+Role: Co-Investigator, 2019 ->
+
 Part of the [National quality registers in healthcare and social services](https://thl.fi/fi/web/sote-palvelujen-johtaminen/arviointi-ja-seuranta/sote-tietopohja/terveydenhuollon-kansalliset-laaturekisterit/kansallisten-laaturekisterien-raportit) in Finland, hosted by the Finnish Institute for Health and Welfare (THL).
 
 This register monitors and improves the quality of care for individuals with psychotic disorders across the country.
 
 ### The Finnish SUPER study
+
+Role: Co-Investigator, 2016 ->
 
 [The Finnish SUPER study](https://www.superfinland.fi/in-english){target="_blank"} investigates the genetic mechanisms of psychotic disorders and is part of the [Stanley Global Neuropsychiatric Genomics Initiative](https://www.broadinstitute.org/stanley-center-psychiatric-research/stanley-global){target="_blank"}.
 
@@ -54,8 +76,3 @@ Key points:
 
 -   See the [cohort profile](https://bmjopen.bmj.com/content/13/4/e070710){target="_blank"} for detailed procedures and methodology
 
-## Other projects
-
-### Tutkijan kevätkoulu
-
-[Tutkijan kevätkoulu](https://kmmsks.github.io/tkk/), Researcher’s Spring School at the National Psychiatry Meeting by the [Finnish Psychiatric Association](www.psy.fi)

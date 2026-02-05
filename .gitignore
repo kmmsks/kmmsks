@@ -47,3 +47,4 @@ cv/
 /aka_fi.qmd
 
 data_personal/
+**/*.quarto_ipynb

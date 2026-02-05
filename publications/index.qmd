@@ -116,3 +116,67 @@ pubs[aka_category =="d", .(n = rev(.I) ,  ref_link)] %>%
             locations = cells_body())
 
 ```
+
+
+## Theses
+
+```{r}
+pubs[aka_category =="g", .(n = rev(.I) ,  ref_link)] %>% 
+  gt() %>% 
+     fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    n ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+) %>% 
+    tab_style(
+    style = "vertical-align:top",
+    locations = cells_body(
+      columns = n
+      )
+  ) %>% 
+  tab_style(style = cell_fill(color = "white"),
+            locations = cells_body())
+
+```
+
+## ICT applications
+```{r}
+data.table(ref_link = "**Suokas K.** [hilmo_identify_episodes](https://github.com/kmmsks/hilmo_identify_episodes) publicly available R script for pre-processing of the Finnish healthcare register. For details, see our paper in International Journal of Methods in Psychiatric Research 2024  [link](https://onlinelibrary.wiley.com/doi/10.1002/mpr.2029)") %>% .[, .(n = rev(.I) ,  ref_link)] %>% 
+  gt() %>% 
+     fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    n ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+) %>% 
+    tab_style(
+    style = "vertical-align:top",
+    locations = cells_body(
+      columns = n
+      )
+  ) %>% 
+  tab_style(style = cell_fill(color = "white"),
+            locations = cells_body())
+
+```
+
+
