@@ -1,7 +1,6 @@
 ---
 title: "Publications"
-execute:
-  echo: false
+
 ---
 
 ```{r}

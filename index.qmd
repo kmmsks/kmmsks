@@ -1,7 +1,6 @@
 ---
 title: "Kimmo Suokas"
-execute:
-  echo: false
+
 ---
 
 ```{r}

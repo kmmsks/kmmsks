@@ -48,6 +48,8 @@ pubs_from_dois <- cr_cn(dois = dois_from_orcid, format = "text", style="american
   unlist() %>% 
   as.data.frame() 
 
+pubs_from_dois$. <- ifelse(pubs_from_dois$. %>% str_starts("1"), pubs_from_dois$. %>% str_remove("1."), pubs_from_dois$.)
+
 colnames(pubs_from_dois) <- c("reference")
 
 # if publiseh in a journal, assume its peer reviewd, if not in a journal, assume not peer reviewed.
@@ -78,7 +80,10 @@ pubs[, reference := ifelse(str_starts(reference, "1. "), str_replace(reference, 
 
 # MANUAL Change of type --------------------------------------------------------
 
-pubs[reference %like% 'doi:10.1002/wps.21027',`:=`(aka_category = 'b', peer_reviewed = FALSE)]
+group_b <- "doi:10.1002/wps.21027|doi:10.23990/sa.176232"
+pubs[reference %like% group_b,`:=`(aka_category = 'b', peer_reviewed = FALSE)]
+
+
 
 # ref + url --------------------------------------------------------------------
 pubs[, ref_link := glue::glue("{pubs$reference} [link]({pubs$url})")]

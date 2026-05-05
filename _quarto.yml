@@ -29,6 +29,10 @@ website:
         aria-label: GitHub
         target: _blank
 
+execute:
+  warning: false
+  message: false
+  echo: false
       
 format:
   html:

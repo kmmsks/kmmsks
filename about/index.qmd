@@ -1,7 +1,5 @@
 ---
 title: "Kimmo Suokas"
-execute:
-  echo: false
 ---
 
 ```{r}
@@ -16,39 +14,16 @@ pos <- fread("../data_personal/positions.csv")
 
 Last updated: `r format(Sys.Date(), '%d.%m.%Y')`
 
-## Education
-
-```{r}
-
-edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()), what = paste0("**", what, "**, ", institute))] %>%
-  gt() %>% 
-   fmt_markdown(columns = everything()) %>% 
-  tab_options(
-    table.width = pct(100),
-    column_labels.hidden = TRUE,
-    table.border.top.style = "hidden",
-    table_body.hlines.style =  "hidden",
-    table_body.border.bottom.style = "hidden"
-  ) %>% 
-   cols_width(
-    years ~ px(120)
-) %>% 
-  cols_align(
-    align = c("left"),
-    columns = everything()
-)
-```
-
 ## Current work
 
 ```{r}
 
-a <- data.table(years = 2023, what = '**Researcher**, [Psychosocial Factors and Health - study group](https://www.helsinki.fi/en/researchgroups/psychosocial-factors-and-health)', where = 'Department of Psychology and Logopedics, Faculty of Medicine, University of Helsinki.')
+a <- data.table(years = 2023, what = '**Researcher**, [Psychosocial Factors and Health - study group](https://www.helsinki.fi/en/researchgroups/psychosocial-factors-and-health)', where = 'Department of Psychology, Faculty of Medicine, University of Helsinki.')
 
 
 b <- data.table(years = 2023, what = '**Consultant Psychiatrist**', where = '[Mehiläinen](https://www.hillaoy.fi)')
 
-c <- data.table(years = 2019, what = '**Member** of the ICD-11 Finnish translation core group', where = '[Finnish Psychiatric Association](https://www.psy.fi/in_english)')
+c <- data.table(years = 2019, what = '**Member of the ICD-11 Finnish translation core group**', where = '[Finnish Psychiatric Association](https://www.psy.fi/in_english)')
 
 rbindlist(list(a, b, c), idcol = "item") %>% .[,.(years = paste0(years, " ->"), what =paste0(what, " <br> ", where))] %>% 
   gt() %>% 
@@ -74,6 +49,30 @@ rbindlist(list(a, b, c), idcol = "item") %>% .[,.(years = paste0(years, " ->"), 
       )
   ) 
 ```
+
+## Education
+
+```{r}
+
+edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()), what = paste0("**", what, "**, ", institute))] %>%
+  gt() %>% 
+   fmt_markdown(columns = everything()) %>% 
+  tab_options(
+    table.width = pct(100),
+    column_labels.hidden = TRUE,
+    table.border.top.style = "hidden",
+    table_body.hlines.style =  "hidden",
+    table_body.border.bottom.style = "hidden"
+  ) %>% 
+   cols_width(
+    years ~ px(120)
+) %>% 
+  cols_align(
+    align = c("left"),
+    columns = everything()
+)
+```
+
 
 ## Awards
 
