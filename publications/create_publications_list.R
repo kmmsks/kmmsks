@@ -100,6 +100,9 @@ pubs <- pubs[!doi %in% c(excl, excl_manual)]
 # Order -----
 pubs <- pubs[order(aka_category, -year_month)]
 
+# outo ". , ed. " tulee joistan.
+pubs[, ref_link := ref_link %>% str_remove(". , ed")]
+
 # save -------------------------------------------------------------------------
 fwrite(pubs, here('publications', 'publications.csv'))
 
