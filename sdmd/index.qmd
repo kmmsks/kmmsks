@@ -21,9 +21,9 @@ Last updated: `r format(Sys.Date(), '%d.%m.%Y')`
 
 This project aims to:
 
--   update key descriptive analyses of the epidemiology of mental disorders in Finland, incorporating both primary and secondary care data;
--   examine the dynamic interplay between socioeconomic factors and mental health across the life course and on multiple levels; and
--   improve the conditions and methodologies of register-based research by applying principles of open science.
+- update key descriptive analyses of the epidemiology of mental disorders in Finland, incorporating both primary and secondary care data;
+- examine the dynamic interplay between socioeconomic factors and mental health across the life course and on multiple levels; and
+- improve the conditions and methodologies of register-based research by applying principles of open science.
 
 ## Rationale
 
@@ -45,19 +45,18 @@ The lifetime incidence of any diagnosed mental disorder by age 100 was 76.7% in 
 
 Using stricter criteria—focusing only on non-organic mental disorders (ICD-10: F10–F99)—the lifetime incidence at age 75 was 65.6% for women and 60.0% for men (95% CI: 59.9–60.1).
 
-These estimates are somewhat lower than comparable figures from Denmark and New Zealand.
-#### Reference
+These estimates are somewhat lower than comparable figures from Denmark and New Zealand. \#### Reference
 
--   `r pubs[reference %like% "10.1017/s2045796025100061", ref_link]`
+- `r pubs[reference %like% "10.1017/s2045796025100061", ref_link]`
 
 #### Media
 
--   [Press release](https://www.helsinki.fi/fi/uutiset/vaeston-terveys/mielenterveyden-hairiot-koskettavat-valtaosaa-suomalaisista)
--   [Valtaosa suomalaisista saa mielenterveyshäiriön diagnoosin](https://yle.fi/a/74-20169733). YLE
--   [Yli 70 prosenttia suomalais­naisista saa diagnoosin elämänsä aikana, kertoo tuore tutkimus](https://www.hs.fi/tiede/art-2000011326509.html). HS
--   [Noin 77 prosenttia suomalaisista naisista saa diagnoosin mielenterveyshäiriöön elämänsä aikana – poikien ensimmäinen diagnoosi usein jo kuusivuotiaana](https://www.ksml.fi/uutissuomalainen/8637126) Keskisuomalainen
--   [Yli 70 prosenttia naisista saa tämän diagnoosin](https://www.iltalehti.fi/mielijamasennus/a/a535dbbe-44dc-4395-b2ec-fc5de9a0ee7d) Iltalehti
--   [Mielenterveyden häiriöt koskettavat valtaosaa suomalaisista](https://www.laakarilehti.fi/terveydenhuolto/mielenterveyden-hairiot-koskettavat-valtaosaa-suomalaisista/) Lääkärilehti
+- [Press release](https://www.helsinki.fi/fi/uutiset/vaeston-terveys/mielenterveyden-hairiot-koskettavat-valtaosaa-suomalaisista)
+- [Valtaosa suomalaisista saa mielenterveyshäiriön diagnoosin](https://yle.fi/a/74-20169733). YLE
+- [Yli 70 prosenttia suomalais­naisista saa diagnoosin elämänsä aikana, kertoo tuore tutkimus](https://www.hs.fi/tiede/art-2000011326509.html). HS
+- [Noin 77 prosenttia suomalaisista naisista saa diagnoosin mielenterveyshäiriöön elämänsä aikana – poikien ensimmäinen diagnoosi usein jo kuusivuotiaana](https://www.ksml.fi/uutissuomalainen/8637126) Keskisuomalainen
+- [Yli 70 prosenttia naisista saa tämän diagnoosin](https://www.iltalehti.fi/mielijamasennus/a/a535dbbe-44dc-4395-b2ec-fc5de9a0ee7d) Iltalehti
+- [Mielenterveyden häiriöt koskettavat valtaosaa suomalaisista](https://www.laakarilehti.fi/terveydenhuolto/mielenterveyden-hairiot-koskettavat-valtaosaa-suomalaisista/) Lääkärilehti
 
 ### Household income and the incidence of first psychiatric hospital admissions
 
@@ -65,20 +64,19 @@ This study is among the few that report incidence rates for all first psychiatri
 
 In Finland, between 1994 and 2014, the age-standardized annual incidence rate of first psychiatric hospital admissions peaked in 2008 and declined thereafter.
 
-Following this study, two other Finnish publications reported similar trends, including increases in first admissions among adolescents and among children, adolescents, and young adults. These findings are particularly noteworthy in the context of a health care system increasingly oriented toward outpatient care. The observed increase in first hospitalizations raises concerns about the effectiveness of outpatient services in preventing or managing acute and severe mental health crises.
-#### Awards
+Following this study, two other Finnish publications reported similar trends, including increases in first admissions among adolescents and among children, adolescents, and young adults. These findings are particularly noteworthy in the context of a health care system increasingly oriented toward outpatient care. The observed increase in first hospitalizations raises concerns about the effectiveness of outpatient services in preventing or managing acute and severe mental health crises. \#### Awards
 
-This study won the Publication of the Year by `r awards[what == "Publication of the Year", paste(by_whom, "in", years)]` and the `r awards[by_whom %like% "EPA", paste0(what, " by the ", by_whom, " in ", years)]` awards.
+This study won the `r awards[id == "fpa_publication_2020", paste(what, "by", awarding_body, "in", years)]` and the `r awards[id == "epa_research_2021", paste(what, "by", awarding_body, "in", years)]` awards.
 
 #### References
 
--   `r pubs[reference %like% "10.1001/jamapsychiatry.2019.3647", ref_link]`
+- `r pubs[reference %like% "10.1001/jamapsychiatry.2019.3647", ref_link]`
 
 #### Media (mainly in Finnish)
 
--   [Press release](https://www.tuni.fi/fi/ajankohtaista/tulojen-ja-ensimmaisen-psykiatrisen-sairaalahoidon-valilla-selva-yhteys)
--   [Tutkimus: Köyhät päätyvät rikkaampia useammin psykiatriseen sairaalahoitoon](https://yle.fi/a/3-11129680). YLE
--   [Analyysi: Mielen hyvinvoinnin tukeminen on osa kasautuvan huono-osaisuuden ehkäisyä](https://kuntalehti.fi/uutiset/sote/analyysi-mielen-hyvinvoinnin-tukeminen-on-osa-kasautuvan-huono-osaisuuden-ehkaisya/). Kuntalehti
+- [Press release](https://www.tuni.fi/fi/ajankohtaista/tulojen-ja-ensimmaisen-psykiatrisen-sairaalahoidon-valilla-selva-yhteys)
+- [Tutkimus: Köyhät päätyvät rikkaampia useammin psykiatriseen sairaalahoitoon](https://yle.fi/a/3-11129680). YLE
+- [Analyysi: Mielen hyvinvoinnin tukeminen on osa kasautuvan huono-osaisuuden ehkäisyä](https://kuntalehti.fi/uutiset/sote/analyysi-mielen-hyvinvoinnin-tukeminen-on-osa-kasautuvan-huono-osaisuuden-ehkaisya/). Kuntalehti
 
 ### Regional and urban-rural variations in the prevalence of mental disorders
 
@@ -88,15 +86,15 @@ However, in our study, after adjusting for socioeconomic and sociodemographic fa
 
 #### References
 
--   `r pubs[reference %like% "10.1007/s00127-023-02516-x", ref_link]`
+- `r pubs[reference %like% "10.1007/s00127-023-02516-x", ref_link]`
 
 #### Media
 
--   [Press release](https://www.tuni.fi/fi/ajankohtaista/mielenterveyshairiot-yleisempia-kaupungeissa-korkeammasta-tulotasosta-huolimatta)
--   [Ennen psykooseja esiintyi Suomessa enemmän maaseudulla kuin kaupungeissa – ei enää, sanoo uusi tutkimus](https://www.hameensanomat.fi/uutissuomalainen/6018026). Hämeen Sanomat
--   [Ennen psykooseja esiintyi Suomessa enemmän maaseudulla kuin kaupungeissa – ei enää, sanoo uusi tutkimus](https://www.ess.fi/uutissuomalainen/6018026). Etelä-Suomen Sanomat
--   [Asetelma kääntyi Suomessa: mielenterveyden häiriöitä esiintyy enemmän kaupungeissa kuin maaseudulla](https://www.kainuunsanomat.fi/artikkeli/asetelma-kaantyi-suomessa-mielenterveyden-hairioita-esiintyy-enemman-kaupungeissa-kuin-maaseudulla). Kainuun Sanomat
--   [Tampereen yliopiston tutkimus: psykooseja ja muita mielenterveyden häiriöitä esiintyy eniten kaupungeissa](https://www.aamulehti.fi/kotimaa/art-2000009669630.html). Aamulehti
+- [Press release](https://www.tuni.fi/fi/ajankohtaista/mielenterveyshairiot-yleisempia-kaupungeissa-korkeammasta-tulotasosta-huolimatta)
+- [Ennen psykooseja esiintyi Suomessa enemmän maaseudulla kuin kaupungeissa – ei enää, sanoo uusi tutkimus](https://www.hameensanomat.fi/uutissuomalainen/6018026). Hämeen Sanomat
+- [Ennen psykooseja esiintyi Suomessa enemmän maaseudulla kuin kaupungeissa – ei enää, sanoo uusi tutkimus](https://www.ess.fi/uutissuomalainen/6018026). Etelä-Suomen Sanomat
+- [Asetelma kääntyi Suomessa: mielenterveyden häiriöitä esiintyy enemmän kaupungeissa kuin maaseudulla](https://www.kainuunsanomat.fi/artikkeli/asetelma-kaantyi-suomessa-mielenterveyden-hairioita-esiintyy-enemman-kaupungeissa-kuin-maaseudulla). Kainuun Sanomat
+- [Tampereen yliopiston tutkimus: psykooseja ja muita mielenterveyden häiriöitä esiintyy eniten kaupungeissa](https://www.aamulehti.fi/kotimaa/art-2000009669630.html). Aamulehti
 
 ### Excess mortality related to mental disorders
 
@@ -110,13 +108,13 @@ To the best of our knowledge, this is the first nationwide study to examine mort
 
 #### References
 
--   `r pubs[reference %like% "10.1002/wps.21027", ref_link]`
--   `r pubs[ref_link %like% "duo17158", ref_link]` Invited editorial.
+- `r pubs[reference %like% "10.1002/wps.21027", ref_link]`
+- `r pubs[ref_link %like% "duo17158", ref_link]` Invited editorial.
 
 #### Media
 
--   [Press release](https://www.sttinfo.fi/tiedote/69960285/mielenterveyden-hairioihin-liittyva-kuolleisuus-on-aiemmin-arvioitua-vahaisempaa?publisherId=69818730)
--   [Mielenterveyden häiriöihin liittyvä kuolleisuus on arvioitua vähäisempää](https://www.laakarilehti.fi/terveydenhuolto/mielenterveyden-hairioihin-liittyva-kuolleisuus-on-arvioitua-vahaisempaa/). Lääkärilehti
+- [Press release](https://www.sttinfo.fi/tiedote/69960285/mielenterveyden-hairioihin-liittyva-kuolleisuus-on-aiemmin-arvioitua-vahaisempaa?publisherId=69818730)
+- [Mielenterveyden häiriöihin liittyvä kuolleisuus on arvioitua vähäisempää](https://www.laakarilehti.fi/terveydenhuolto/mielenterveyden-hairioihin-liittyva-kuolleisuus-on-arvioitua-vahaisempaa/). Lääkärilehti
 
 ## Data and methodology
 
@@ -130,9 +128,9 @@ In this study, we showed that registers with continuous and mainly automatized d
 
 #### References:
 
--   Suokas, K.,  Gutvilig, M.,  Lumme, S.,  Pirkola, S., &  Hakulinen, C. (2024).  Enhancing the accuracy of register-based metrics: Comparing methods for handling overlapping psychiatric register entries in Finnish healthcare registers. *International Journal of Methods in Psychiatric Research*, e2029. <https://doi.org/10.1002/mpr.2029>
+- Suokas, K.,  Gutvilig, M.,  Lumme, S.,  Pirkola, S., &  Hakulinen, C. (2024).  Enhancing the accuracy of register-based metrics: Comparing methods for handling overlapping psychiatric register entries in Finnish healthcare registers. *International Journal of Methods in Psychiatric Research*, e2029. <https://doi.org/10.1002/mpr.2029>
 
--   Suokas, K (2023). hilmo_identify_episodes (v2.0.0) \[Source code\]. <https://github.com/kmmsks/hilmo_identify_episodes>. doi: [10.5281/zenodo.4095153](https://zenodo.org/records/10171088).
+- Suokas, K (2023). hilmo_identify_episodes (v2.0.0) \[Source code\]. <https://github.com/kmmsks/hilmo_identify_episodes>. doi: [10.5281/zenodo.4095153](https://zenodo.org/records/10171088).
 
 ## My PhD thesis
 
@@ -142,8 +140,8 @@ The thesis was granted the Martti Kaila Award for an Outstanding Doctoral Disser
 
 ### Media
 
--   [Rekisteritieto päivittää perustietämystä väestön mielenterveyshäiriöistä](https://www.tuni.fi/fi/ajankohtaista/kimmo-suokas-rekisteritieto-paivittaa-perustietamysta-vaeston-mielenterveyshairioista). Tampereen yliopisto: tiedote.
+- [Rekisteritieto päivittää perustietämystä väestön mielenterveyshäiriöistä](https://www.tuni.fi/fi/ajankohtaista/kimmo-suokas-rekisteritieto-paivittaa-perustietamysta-vaeston-mielenterveyshairioista). Tampereen yliopisto: tiedote.
 
--   [Tutkija löysi yllättävää uutta tietoa Suomen mielenterveyspotilaista: kuolleisuus luultua vähäisempää, itä eroaa lännestä](https://yle.fi/a/74-20081831). Yle
+- [Tutkija löysi yllättävää uutta tietoa Suomen mielenterveyspotilaista: kuolleisuus luultua vähäisempää, itä eroaa lännestä](https://yle.fi/a/74-20081831). Yle
 
--   [Mielenterveyden häiriöihin liittyvä kuolleisuus arvioitua vähäisempää](https://www.laakarilehti.fi/tieteessa/mielenterveyden-hairioihin-liittyva-kuolleisuus-arvioitua-vahaisempaa/) Suomen Lääkärilehti.
+- [Mielenterveyden häiriöihin liittyvä kuolleisuus arvioitua vähäisempää](https://www.laakarilehti.fi/tieteessa/mielenterveyden-hairioihin-liittyva-kuolleisuus-arvioitua-vahaisempaa/) Suomen Lääkärilehti.

@@ -8,7 +8,11 @@ library(data.table)
 library(gt)
 
 edu <- fread("../data_personal/education.csv")
-pos <- fread("../data_personal/positions.csv")
+pos <- rbindlist(list(
+  fread("../data_personal/positions_other.csv"), 
+  fread("../data_personal/positions_clinical.csv")
+))
+awards <- fread("../data_personal/awards.csv")
 
 ```
 
@@ -54,7 +58,7 @@ rbindlist(list(a, b, c), idcol = "item") %>% .[,.(years = paste0(years, " ->"), 
 
 ```{r}
 
-edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()), what = paste0("**", what, "**, ", institute))] %>%
+edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()), what = paste0("**", what, "**, ", where))] %>%
   gt() %>% 
    fmt_markdown(columns = everything()) %>% 
   tab_options(
@@ -73,18 +77,18 @@ edu[order(-end_date)] %>% .[language=="en", .(years = paste0(end_date %>% year()
 )
 ```
 
-
 ## Awards
 
 ```{r}
 
-list(
-  data.table(years = 2025, what = '**Martti Kaila Award** for an Outstanding Doctoral Dissertation in 2024 by the [Finnish Psychiatric Association](https://psy.fi/martti-kaila-palkinto-2024/)'),
-  data.table(years = 2025, what = 'University of Tampere Foundation Grant for a doctoral dissertation accepted with distinction 2025'),
-  data.table(years = 2021, what = '[Research Prize](https://www.europsy.net/previous-winners/) by the European Psychiatric Association (EPA)'),
-  data.table(years = 2020, what = '**Publication of the Year** award by the Finnish Psychiatric Association')) %>% 
-  rbindlist() %>% 
-   gt() %>% 
+# list(
+#   data.table(years = 2025, what = '**Martti Kaila Award** for an Outstanding Doctoral Dissertation in 2024 by the [Finnish Psychiatric Association](https://psy.fi/martti-kaila-palkinto-2024/)'),
+#   data.table(years = 2025, what = 'University of Tampere Foundation Grant for a doctoral dissertation accepted with distinction 2025'),
+#   data.table(years = 2021, what = '[Research Prize](https://www.europsy.net/previous-winners/) by the European Psychiatric Association (EPA)'),
+#   data.table(years = 2020, what = '**Publication of the Year** award by the Finnish Psychiatric Association')) %>% 
+#   rbindlist() %>% 
+awards[order(-start_date), .(years, item = paste0("**", what, "** by ", awarding_body))] %>% 
+  gt() %>% 
    fmt_markdown(columns = everything()) %>% 
   tab_options(
     table.width = pct(100),
@@ -113,8 +117,12 @@ list(
 ## Past work
 
 ```{r}
-a <- pos[order(-end_date)][language=="en" & !is.na(end_date), .(years = ifelse(year(start_date) == year(end_date), year(start_date),  paste0(year(start_date), "--", year(end_date))), item = paste0("<b>",what, "</b><br>", where, "<br>", details_1))] %>% head(-6) 
-b <- data.table(years = c("2011--2018"), item = paste0("**Specialising Physician** at ", pos[language == "en"] %>% 
+
+add_link <- function(text, url) fifelse(!is.na(url), paste0("[", text, "](", url, ")"), text)
+
+a <- pos[order(-end_date)][language=="en" & !is.na(end_date), .(years = ifelse(year(start_date) == year(end_date), year(start_date),  paste0(year(start_date), "--", year(end_date))), item = paste0("<b>",what, "</b><br>", where, "<br>", details,
+        fifelse(!is.na(url), add_link(" link", url), "")                                                                                              ))] %>% head(-6) 
+b <- data.table(years = c("2011--2018"), item = paste0("**Specialising Physician** \n\n  ", pos[language == "en"] %>% 
   tail(6) %>% 
   .$where %>% 
   paste(collapse = '; ')))

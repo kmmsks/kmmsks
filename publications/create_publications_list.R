@@ -6,6 +6,10 @@
 #   * You may enter dois and/or plain text citations.
 #   * You may  get Dois from ORCID
 
+# MANAUL ADD DOIs-----
+
+dois_add <- c("10.1016/S2468-2667(26)00069-1")
+
 # Load packages ----------------------------------------------------------------
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(here, dplyr, glue, stringr, zoo, rorcid, tools, RefManageR, rcrossref, usethis, data.table, magrittr, scholar)
@@ -36,15 +40,19 @@ fix_links <- function(df){
 # Authentication, see: https://ciakovx.github.io/rorcid.html
 dois_from_orcid <- rorcid::identifiers(rorcid::works("0000-0001-6296-6343"))
 
+# include manual_add
+
+dois <- c(dois_from_orcid, dois_add)
+
 # remoe duplicates
-dois_from_orcid <- dois_from_orcid %>% unique()
+dois <- dois %>% unique()
 
 
 # using rcrossref, get data in data.frame form
-pubs_from_dois_table <- cr_works(dois = dois_from_orcid) %>% purrr::pluck("data") #, format = "text", style="apa")
+pubs_from_dois_table <- cr_works(dois = dois) %>% purrr::pluck("data") #, format = "text", style="apa")
 
 # get reference as text, select style, see rcrossref::get_styles()
-pubs_from_dois <- cr_cn(dois = dois_from_orcid, format = "text", style="american-medical-association-no-et-al") %>% 
+pubs_from_dois <- cr_cn(dois = dois, format = "text", style="american-medical-association-no-et-al") %>% 
   unlist() %>% 
   as.data.frame() 
 
@@ -83,6 +91,8 @@ pubs[, reference := ifelse(str_starts(reference, "1. "), str_replace(reference, 
 group_b <- "doi:10.1002/wps.21027|doi:10.23990/sa.176232"
 pubs[reference %like% group_b,`:=`(aka_category = 'b', peer_reviewed = FALSE)]
 
+group_d <- "10.1016/s2468-2667(26)00069-1"
+pubs[doi %in% group_d,`:=`(aka_category = 'd', peer_reviewed = FALSE)]
 
 
 # ref + url --------------------------------------------------------------------
@@ -100,7 +110,7 @@ pubs <- pubs[!doi %in% c(excl, excl_manual)]
 # Order -----
 pubs <- pubs[order(aka_category, -year_month)]
 
-# outo ". , ed. " tulee joistan.
+# outo ". , ed" tulee joistan.
 pubs[, ref_link := ref_link %>% str_remove(". , ed")]
 
 # save -------------------------------------------------------------------------
