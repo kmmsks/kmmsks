@@ -103,7 +103,7 @@ pubs[, ref_link := glue::glue("{pubs$reference} [link]({pubs$url})")]
 excl <- pubs_from_dois_table %>% as.data.table() %>%  .[, .SD[.N>1 & type != "journal-article"], title] %>% .[,doi]
 
 # manual
-excl_manual <- c("10.1101/2023.12.07.23299655")
+excl_manual <- c("10.1101/2023.12.07.23299655", "10.1007/s00127-026-03203-3")
  
 pubs <- pubs[!doi %in% c(excl, excl_manual)]
 
